@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>IRIS-FLOWER Prediction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-devide-width , initial-scale =1">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+<body>
+
+<div class = "login">
+  
+    
+        </span>Machine Learning Iris-Flower Class Prediction</span>
+            
+
+            <div class style="padding: 10px 5px;color: #ff0000;margin-top: 15px;border: 2px solid #d9d9d9;" >
+                <form method = "POST"action = "{{ url_for('predict')}}"> 
+                    Sepal Length : <input type="text" name = 'sepal-length' placeholder = "Sepal Length (cm)" /><br><br>
+                    Sepal Width: <input type="text" name = 'sepal-width' placeholder = "Sepal Width (cm)" /><br><br>
+                    Petal Length: <input type="text" name = 'petal-length' placeholder = "Petal_length (cm)" /><br><br>
+                    Petal Width : <input type="text" name = petal-width' placeholder = "Petal_width (cm)" /><br><br>
+                    <input type = "submit" , value = 'PREDICT' >
+                    {{ prediction_text }}
+                </form>
+                
+            <br><br>
+           
+
+      
+
+    </div>
+</div>  
+
+
+</body>        
+</html>
